@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	min-height: 100;
+	width: 100%;
+	 background-color:pink;
+    color: white;
+}
+ 
+.header1{   
+  min-height:100vh;
+  background-image:linear-gradient(rgba(4,9,30,0.7) ,rgba(4,9,30,0.7)), url(images/indexpic.jpeg);
+  background-position:center;
+  background-size:cover;
+  position:relative;
+}
+.header1 img{
+    width: 70px;
+    padding-left: 100px ;
+    position: relative;
+    display: flex;
+    width:  fit-content;
+
+}
+.website-header{
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+.website-header img{
+    float: left;
+    width: 50px;
+    height: 50px;   
+    margin: 0 30px;/*margin*/
+    display:block;
+    
+}
+.website-header h1{
+    padding-top: px;
+    color: black;
+    font-size: 50px;
+    margin: auto 0;  /*vertically centered*/
+}
+.date{
+    text-align: right;
+    flex-grow: 1;
+}
+.date h2{  
+color: rebeccapurple ; 
+   font-size: 18px;
+}
+
+nav{
+  background-color: black;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;                                                            
+}
+.nav-links{
+   flex:1;
+   text-align:right;
+}
+.nav-links ul li{
+   list-style:none;
+   display:inline-block;
+   padding:10px 20px;
+   position:relative;
+}
+.nav-links ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: 0.5s
+}
+
+.nav-links ul li :hover{
+    color: pink;
+}

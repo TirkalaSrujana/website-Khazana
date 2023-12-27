@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movies</title>
+		<link rel="stylesheet" href="stylemovies.css"/>
+</head>
+<body>
+   <body background="images/movies.jpeg">
+<section class="header">
+     <div class="website-header" id="navlinks">
+      <img src="images/logo.png">
+      <h1>KHAZANA ~ One for All</h1>
+        <div class="date">
+           <h2 id="date-today"></h2>
+       </div>    
+     </div> 
+        <nav>
+           <div class="nav-links" id="navlinks">
+              <ul>
+               <li><a href="index.html">KHAZANA</a></li>
+               <li><a href="news.html"> News</a></li>
+               <li><a href="articles.html"> ARTICLES</a></li>
+               <li><a href="games.html">GAMES</a></li>
+               <li><a href="contact.html"> CONTACT</a></li>  
+             </ul>
+           </div>
+       </nav>
+</section>
+
+<!-----------Movies------------->
+<section class="Movies">
+<h1>Trending Movies</h1>
+<h1><STRONG><CENTER><FONT COLOR="MAGENTA PINK">BORED??</STRONG></FONT></CENTER></STRONG></h1>
+<p><center><FONT COLOR="BLACK">Let's see what is going on in the movie world!!</FONT></center></p><BR>
+
+<div class="Movies-col">
+
+<h1><STRONG><CENTER><FONT COLOR="MAGENTA PINK"></STRONG>BOLLYWOOD</FONT></CENTER></STRONG></h1>
+<a>
+<img src="images/bb.jpg">
+</a>
+
+<p> MANJULIKA IS BACK IN ACTION!! "BHOOL BHULAIYAA 2 released on 20 May 2022, is a comedy horror film directed by Anees Bazmee, written by Aakash Kaushik and Farhad Samji, and produced by Bhushan Kumar and Krishan Kumar under the banner T-Series Films and Murad Khetani and Anjum Khetani under the banner Cine1 Studios. 
+Kartik Aaryan and Kiara Ali Advani being the lead actors in this movie, raked in close to Rs 56 crore in its first weekend of release. It has crossed the Rs 100-crore mark at the box office. It was first filmed in a real mansion in Lucknow and then in Mumbai and Manali. This movie received positive reviews from critics.
+But, have you watched Bhool Bhulaiyaa (the first part)?? If not, do watch.</p>
+<h4> To know more about this Amazing movie <a href="https://en.wikipedia.org/wiki/Bhool_Bhulaiyaa_2"> click here</a></h4>
+<h4> Can't wait to watch this movie?
+   what are you waiting for? <a href="https://in.bookmyshow.com/explore/home/hyderabad"> book your tickets now!! </a></h4>
+
+</div>
+
+
+<div class="Movies-col">
+<h1><STRONG><CENTER><FONT COLOR="MAGENTA PINK"></STRONG>TOLLYWOOD</FONT></CENTER></STRONG></h1>
+   <a>
+         <img src="images/major.jpeg">
+      </a>
+<p> "MAJOR" is an action-drama film directed by Sashi Kiran Tikka and produced under GMB production house which is owned by Superstar Mahesh Babu in collaboration with other producers Anurag Reddy and Sharath Chandra. The main plot of this movie revolves around the Indian Soldiers.
+Adivi Sesh plays the lead role in this film. It was released on 24th May 2022 in specific cities across India and was released worldwide on 3rd June 2022. Major grossed ₹13.1 crores on its opening. According to trade analyst Taran Adarsh, the film made a gross collection of ₹4.66 crores domestically from the Hindi version.
+</p>
+<h4> To know more about this Amazing movie <a href="https://en.wikipedia.org/wiki/Major_(film)"> click here</a></h4>
+<h4> Can't wait to watch this movie?
+   what are you waiting for? <a href="https://in.bookmyshow.com/explore/home/hyderabad"> book your tickets now!!</a></h4>
+
+</div>
+
+<div class="Movies-col">
+<h1><STRONG><CENTER><FONT COLOR="MAGENTA PINK"></STRONG>HOLLYWOOD</FONT></CENTER></STRONG></h1>
+  <a>
+         <img src="images/horror.jpeg">
+      </a>
+<p> "UNCHARTED" is an American action-adventure film directed by Ruben Fleischer. It stars Tom Holland and Mark Wahlberg with Sophia Ali, Tati Gabrielle, and Antonio Banderas in supporting roles.
+ This movie is based on the popular video game franchise from Naughty Dog.  The film earned an estimated $15.4 million on its first day, including $3.7 million from Thursday night previews.
+ Its opening surpassed projections, grossing $44 million in three days and $51.3 million in four days. It had the biggest opening during the first two months of 2022. 
+ Till June 5th, Uncharted has gained $148 million in the United States and in Canada, and $253.1 million in other territories for a worldwide total of $401.1 million.
+</p>
+<h4> To know more about this Amazing movie <a href="https://en.wikipedia.org/wiki/Uncharted_(film)"> click here</a></h4>
+<h4> Can't wait to watch this movie?
+   what are you waiting for? <a href="https://in.bookmyshow.com/explore/home/hyderabad"> book your tickets now!! </a></h4>
+</div>
+</section>
+</nav>
+
+
+<!--------------------javascript----------------->
+
+
+<script>
+  var dateToday = document.getElementById("date-today");
+  var today =new Date();
+  var dd =today.getDate();
+  var mm =today.getMonth()+1;
+  var yyyy=today.getFullYear();
+  console.log(mm);
+
+  if(dd<10){
+     dd='0' +dd;
+   }
+             
+  if(mm<10){
+    mm='0'+mm;
+   }
+   today=dd+'-'+mm+'-' +yyyy;
+   console.log(today);
+   document.getElementById("date-today").innerHTML=today;                                       
+</script>
+<!--<script>
+   var navlinks=document.getElementById("navlinks");
+   function showMenu(){
+     navlinks.style.right = "0";
+   } 
+   function hideMenu(){
+     navlinks.style.right="-200px"
+   }
+</script> -->
+
+
+</body>
+</html>

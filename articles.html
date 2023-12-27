@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trending Articles</title>
+		<link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+<section class="header">
+     <div class="website-header" id="navlinks">
+      <img src="images/logo.png">
+      <h1>KHAZANA ~ One for All</h1>
+        <div class="date">
+           <h2 id="date-today"></h2>
+       </div>    
+     </div> 
+        <nav>
+           <div class="nav-links" id="navlinks">
+              <ul>
+               <li><a href="index.html">KHAZANA</a></li>
+               <li><a href="news.html"> News</a></li>
+               <li><a href="movies.html"> MOVIES </a></li>
+               <li><a href="games.html"> GAMES </a></li> 
+               <li><a href="contact.html"> CONTACT </a></li>
+
+             </ul>
+           </div>
+       </nav>
+</section>
+
+
+<!-----------Articles------------->
+<section class="articles ">
+<h1>Trending Articles</h1>
+<h3>You will find some interesting articles which might be useful and are gathered from various sources.</h3>
+
+<body background="Images/articlebg.jpeg">
+
+<div class="articles-col">
+   <h1>For a More Creative Brain Follow These 5 Steps</h1>
+<p>
+   <p1>Nearly all great ideas follow a corresponding creative process and this paper explains how this process works. Understanding this is important because creative thinking is one of the most useful expertise you can have. Nearly every problem you face in work and in life can profit from innovative results, side thinking, and creativeideas.Anyone can learn to be creative by using these five steps.</p1>
+
+<br><h4>Gather new material.</h4><br>
+<p1> First, you learn. During this stage you concentrate on  Literacy specific material directly related to your task and Learning general material by getting fascinated with a wide range of concepts.</p1><br>
+
+<br><h4>Thoroughly work over the stuff in your mind.</h4><br>
+<p1> During this stage, you examine what you have learned by looking at the data from different angles and experimenting with appropriate varied ideas together.</p1><br>
+
+<br><h4>Step down from the problem.</h4><br>
+<p1> Next, you put the problem fully out of your mind and go do a commodity differently that excites you and energises you.</p1><br>
+
+<br><h4>Let your idea return to you.</h4><br>
+<p1> At some point, but only after you have stopped allowing it, your idea will come back to you with a flash of perceptiveness and renewed energy.</p1><br>
+
+<br><h4>Shape and develop your idea grounded on feedback.</h4><br>
+<p1> For any idea to succeed, you must release it out into the world, submit it to review, and adjust it as demanded.</p1><br>
+</p>
+<h4> To know more about this article <a href="https://jamesclear.com/articles"> click here</a></h4>
+</div>
+
+<div class="articles-col">
+
+   <h1>The Ultimate Productivity Hack is Saying No</h1><br>
+
+<h4>Not doing commodities will always be quicker than doing it. This statement reminds me of the old computer programming saying, “ Flash back that there's no law briskly than no law. ”</h4><br>
+<p1> The same ideology applies in other areas of life. For illustration, there's no meeting that goes sooner than not having a meeting at all.</p1><br>
+
+<br><div><p1>The truth is that we say yes to multiple things we don't actually want to do. It's worth asking if stuff is necessary. Many of them are not, and a simple “ no ” will be more productive than whatever work the most effective person can muster.</p1></div><br>
+<br><div>The words “ yes ” and “ no ” get used in comparison to each other so constantly that it feels like they carry equal weight in discussion.</div>
+<br><div> In reality, they are not just contrary in meaning, but of entirely different extents commitment.When you say no, you are only saying no to one option. When you say yes, you are saying no to everyotheroption.In other words, saying no saves you time in the future.No is a form of time credit.</div>
+<br><div>You retain the capability to spend your coming time however you want. Yes is a form of time debt. You have to pay back your commitment at some point.</div><br>
+<br><h4>No is a decision. Yes is a responsibility</h4>
+<h4> To know more about this article <a href="https://jamesclear.com/articles"> click here</a></h4>
+</div>
+
+<div class="articles-col">
+
+   <h1>The Surprising Benefits of Journaling One Sentence Every Day</h1><br>
+   <br><p1>Journaling is simply the act of talking about your life and writing it down. That’s it. Nothing more is demanded. But despite its simplicity, the day-to-day journal has played a crucial part in the careers of numerous productive people.</p1><br>
+   <br><p1>Journaling has been applied by scores of brilliant thinkers and designers.</p1><br>
+   <br><p1> Leaders and politicians throughout history have kept journals in one form or another.</p1><br>
+   <br><p1> Nearly anyone can profit from getting their studies out of their head and onto paper.</p1><br>
+   <br><p1>Journaling provides the occasion to learn new assignments from old experiences.Reading your old journal entries is a bit like reading a great book for an alternate time. You pick up on new findings and see the history in a different way. Only this time, you're re-reading the story of your life.</p1><br>
+   <br><p1>Journaling sharpens your memory.</p1><br>
+   <br><p1>Time will change your face without you noticing, but it'll also change your reflections without you realising it.</p1>p1><br>
+   <br><h4> Journaling motivates you to make the maximum of each day. </h4><br>
+   <br><h4>Journaling provides evidence of your progress.</h4><br>
+   <h4> To know more about this article <a href="https://jamesclear.com/articles"> click here</a></h4>
+
+</section>
+</div>
+
+<!--------------------javascript----------------->
+
+
+<script>
+  var dateToday = document.getElementById("date-today");
+  var today =new Date();
+  var dd =today.getDate();
+  var mm =today.getMonth()+1;
+  var yyyy=today.getFullYear();
+  console.log(mm);
+
+  if(dd<10){
+     dd='0' +dd;
+   }
+             
+  if(mm<10){
+    mm='0'+mm;
+   }
+   today=dd+'-'+mm+'-' +yyyy;
+   console.log(today);
+   document.getElementById("date-today").innerHTML=today;                                       
+</script>
+<!--<script>
+   var navlinks=document.getElementById("navlinks");
+   function showMenu(){
+     navlinks.style.right = "0";
+   } 
+   function hideMenu(){
+     navlinks.style.right="-200px"
+   }
+</script> -->
+
+
+</body>
+</html>
+

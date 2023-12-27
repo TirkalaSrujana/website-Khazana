@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Games</title>
+		<link rel="stylesheet" href="stylegames.css"/>
+</head>
+<body>
+   <body background="images/games.jpeg">
+<section class="header">
+     <div class="website-header" id="navlinks">
+      <img src="images/logo.png">
+      <h1>KHAZANA ~ One for All</h1>
+        <div class="date">
+           <h2 id="date-today"></h2>
+       </div>    
+     </div> 
+        <nav>
+           <div class="nav-links" id="navlinks">
+              <ul>
+               <li><a href="index.html">KHAZANA</a></li>
+               <li><a href="news.html"> News</a></li>
+               <li><a href="articles.html"> ARTICLES</a></li>
+               <li><a href="movies.html"> MOVIES </a></li>
+               <li><a href="contact.html"> CONTACT</a></li>  
+             </ul>
+           </div>
+       </nav>
+</section>
+<body>
+    <h2><br><br><center> FUN TIME</center></h2>
+     <center><h2> The ARROW Game</h2>
+        <iframe src="https://www.addictinggames.com/embed/html5-games/23585" height="550"  width="700" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe></center>
+    <br><br>
+      <center><h2> RISE UP </h2><iframe src="https://www.addictinggames.com/embed/html5-games/23866" height="550"  width="700" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe></center>
+      <br><br>
+      <center><h2> COLA FACTORY </h2><iframe src="https://www.addictinggames.com/embed/html5-games/19672" height="550"  width="700" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe></center>
+     
+</body>
+</html>
+
+
+
+<!--------------------javascript----------------->
+
+
+<script>
+  var dateToday = document.getElementById("date-today");
+  var today =new Date();
+  var dd =today.getDate();
+  var mm =today.getMonth()+1;
+  var yyyy=today.getFullYear();
+  console.log(mm);
+
+  if(dd<10){
+     dd='0' +dd;
+   }
+             
+  if(mm<10){
+    mm='0'+mm;
+   }
+   today=dd+'-'+mm+'-' +yyyy;
+   console.log(today);
+   document.getElementById("date-today").innerHTML=today;                                       
+</script>
+<!--<script>
+   var navlinks=document.getElementById("navlinks");
+   function showMenu(){
+     navlinks.style.right = "0";
+   } 
+   function hideMenu(){
+     navlinks.style.right="-200px"
+   }
+</script> -->
+
+
+</body>
+</html>

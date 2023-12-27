@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+     <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+     <title>KHAZANA ~ One for All</title>
+     <link rel="stylesheet"href="style.css">
+     <link rel="preconnect"href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+     <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/fontawesome/4.7.0/css/font-awesome.min.css"><!--fontawsome icons-->
+</head>
+<body>
+<section class="header">
+     <div class="website-header" id="navlinks">
+      <img src="images/logo.png">
+      <h1>KHAZANA ~ One for All</h1>
+        <div class="date">
+           <h2 id="date-today"></h2>
+       </div>    
+     </div> 
+        <nav>
+           <div class="nav-links" id="navlinks">
+              <ul>
+               <li><a href="mainpage.html">HOME</a></li>
+               <li><a href="news.html"> NEWS</a></li>
+               <li><a href="article.html"> ARTICLES</a></li>
+               <li><a href="movies.html"> MOVIES </a></li>
+               <li><a href="games.html"> GAMES </a></li>
+               <li><a href="contact.html"> CONTACT </a></li>
+             </ul>
+           </div>
+       </nav>
+      <section class="header1">
+        <img src="images/indexpic.jpeg"> 
+      <div class="text-box">
+             <h1> Khazana - a box full of knowledge </h1>
+            <p>Welcome to an interactive website that consists information about various topics at a place.</p>
+            <a href="contact.html" class="hero-btn"> Visit Us To know More </a> 
+      </div>
+      </section>
+</section>
+
+<!-----ABOUT---->
+ <section class="about">
+     <h1>About the page</h1>
+           <div class="about-col">
+               <p>KHAZANA~ One in All!! <br>  We the people being a part of this generation, this era, who work, use, prefer, everything online, were wondering about us surfing ‘n’ number of websites to collect information or to read news or articles at one place.
+               <br> Wandering, Wondering and Struggling in the web of WEBSITES to surf data or content for every other work.
+               <br>And so emerged "KHAZANA" as the result.
+               <br><br>KHAZANA~ One in All!!<br> KHAZANA is a website specially designed in the form of a newspaper  which will consist of all the information about various topics from news to entertainment.Specially designed with the aim to help you find all the information at a place.
+               </p>
+          </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!--------------------javascript----------------->
+
+<script>
+
+  var dateToday = document.getElementById("date-today");
+  var today = new Date();
+  var dd =today.getDate();
+  var mm =today.getMonth()+1;
+  var yyyy=today.getFullYear();
+  console.log(mm);
+
+  if(dd<10){
+     dd='0' +dd;
+   }
+             
+  if(mm<10){
+    mm='0'+mm;
+   }
+   today=dd+'-'+mm+'-' +yyyy;
+   console.log(today);
+   document.getElementById("date-today").innerHTML=today;                                       
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

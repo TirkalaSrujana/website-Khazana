@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+		<link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+
+<section class="header">
+     <div class="website-header" id="navlinks">
+      <img src="images/logo.png
+      ">
+      <h1>KHAZANA ~ One for All</h1>
+        <div class="date">
+           <h2 id="date-today"></h2>
+       </div>    
+     </div> 
+        <nav>
+           <div class="nav-links" id="navlinks">
+              <ul>
+               <li><a href="index.html">KHAZANA</a></li>
+               <li><a href="news.html"> News</a></li>
+               <li><a href="articles.html"> ARTICLES</a></li>
+               <li><a href="movies.html"> MOVIES </a></li>
+               <li><a href="games.html"> GAMES </a></li>  
+             </ul>
+           </div>
+       </nav>
+</section>
+	<section class="cta">
+		<body background="images/contact.jpeg"></body>
+		<h1><a href="subscribe.html"> <center>Subscribe</center></a></h1>
+	</section>	
+
+
+<!--------------------javascript----------------->
+
+
+<script>
+  var dateToday = document.getElementById("date-today");
+  var today =new Date();
+  var dd =today.getDate();
+  var mm =today.getMonth()+1;
+  var yyyy=today.getFullYear();
+  console.log(mm);
+
+  if(dd<10){
+     dd='0' +dd;
+   }
+             
+  if(mm<10){
+    mm='0'+mm;
+   }
+   today=dd+'-'+mm+'-' +yyyy;
+   console.log(today);
+   document.getElementById("date-today").innerHTML=today;                                       
+</script>
+</body>
+</html>
+
