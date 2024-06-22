@@ -1,4 +1,5 @@
-KHAZANA ~ One in All
+# KHAZANA ~ One in All - A project made by a group of 4
+
 Information about several events occurring around the world, about games, movies, politics, etc,. From where do we get this information? 
 Newspapers…How often do we read newspapers these days?
 Newspapers that were started in the late 1690’s in order to promote social causes have come a long way to online feeds today. 
